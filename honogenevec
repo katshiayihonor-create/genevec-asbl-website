@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GENEVEC ASBL : formation professionnelle, entrepreneuriat et insertion socio-économique en République démocratique du Congo.">
+  <title>GENEVEC ASBL | Génération Vertueuse</title>
+  <style>
+    :root {
+      --blue: #12345a;
+      --blue-dark: #0a203b;
+      --gold: #d7ad55;
+      --light: #f5f7fa;
+      --text: #263445;
+      --white: #ffffff;
+    }
+
+```
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+header {
+  background: var(--white);
+  border-bottom: 3px solid var(--gold);
+  padding: 15px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand { color: var(--blue); font-size: 25px; font-weight: 800; }
+.brand span { display: block; color: #65758a; font-size: 11px; letter-spacing: 2px; }
+
+nav { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+nav a { color: var(--blue); text-decoration: none; font-weight: 600; }
+nav a:hover { color: #a57a25; }
+.language { border: 1px solid #d8dee8; padding: 7px 10px; border-radius: 6px; background: white; cursor: pointer; }
+
+.hero {
+  background: linear-gradient(120deg, rgba(10,32,59,.97), rgba(18,52,90,.91));
+  color: white;
+  padding: 90px 7%;
+  text-align: center;
+}
+
+.hero .eyebrow { color: #f1ce82; letter-spacing: 3px; font-weight: bold; }
+.hero h1 { font-size: clamp(32px, 5vw, 56px); line-height: 1.15; max-width: 900px; margin: 20px auto; }
+.hero p { font-size: 19px; max-width: 760px; margin: 0 auto 30px; color: #e7edf5; }
+.button {
+  display: inline-block;
+  background: var(--gold);
+  color: #10243d;
+  padding: 13px 24px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button.outline { background: transparent; border: 1px solid white; color: white; }
+
+section { padding: 65px 7%; }
+.section-title { text-align: center; color: var(--blue); font-size: 32px; margin: 0 0 12px; }
+.section-intro { text-align: center; max-width: 760px; margin: 0 auto 35px; }
+.gold-line { width: 65px; height: 4px; background: var(--gold); margin: 15px auto 25px; }
+
+.about { background: var(--light); }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 22px; }
+.card {
+  background: white;
+  padding: 27px;
+  border-radius: 9px;
+  box-shadow: 0 5px 20px rgba(20,40,70,.07);
+  border-top: 3px solid var(--gold);
+}
+.card h3 { color: var(--blue); margin-top: 0; }
+.icon { font-size: 30px; }
+
+.callout { background: var(--blue); color: white; text-align: center; }
+.callout h2 { font-size: 30px; }
+.callout p { max-width: 750px; margin: 0 auto 20px; }
+
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; }
+.contact-box { background: var(--light); padding: 25px; border-radius: 8px; }
+.contact-box h3 { color: var(--blue); }
+
+footer { background: var(--blue-dark); color: #e5eaf1; padding: 30px 7%; text-align: center; }
+footer a { color: #f1ce82; }
+.small { font-size: 13px; color: #c5cfdb; }
+
+@media (max-width: 700px) {
+  header { justify-content: center; text-align: center; }
+  nav { justify-content: center; gap: 12px; }
+  .hero { padding: 65px 6%; }
+  section { padding: 48px 6%; }
+}
+```
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="brand">GENEVEC <span>GÉNÉRATION VERTUEUSE</span></div>
+  <nav>
+    <a href="#accueil" data-fr="Accueil" data-en="Home">Accueil</a>
+    <a href="#apropos" data-fr="À propos" data-en="About us">À propos</a>
+    <a href="#domaines" data-fr="Nos domaines" data-en="Our areas">Nos domaines</a>
+    <a href="#partenaires" data-fr="Partenaires" data-en="Partners">Partenaires</a>
+    <a href="#beneficiaires" data-fr="Bénéficiaires" data-en="Beneficiaries">Bénéficiaires</a>
+    <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+    <button class="language" id="languageButton" type="button">EN</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="eyebrow" data-fr="AGIR • FORMER • ACCOMPAGNER" data-en="ACT • TRAIN • EMPOWER">AGIR • FORMER • ACCOMPAGNER</div>
+    <h1 data-fr="Construire un avenir meilleur grâce aux compétences et à l’entrepreneuriat"
+        data-en="Building a better future through skills and entrepreneurship">
+      Construire un avenir meilleur grâce aux compétences et à l’entrepreneuriat
+    </h1>
+    <p data-fr="GENEVEC ASBL œuvre pour le renforcement des compétences, l’initiative entrepreneuriale et l’insertion socio-économique en République démocratique du Congo."
+       data-en="GENEVEC ASBL works to strengthen skills, entrepreneurship and socio-economic inclusion in the Democratic Republic of the Congo.">
+      GENEVEC ASBL œuvre pour le renforcement des compétences, l’initiative entrepreneuriale et l’insertion socio-économique en République démocratique du Congo.
+    </p>
+    <a class="button" href="#apropos" data-fr="Découvrir GENEVEC" data-en="Discover GENEVEC">Découvrir GENEVEC</a>
+    <a class="button outline" href="#contact" data-fr="Nous contacter" data-en="Contact us">Nous contacter</a>
+  </section>
+
+  <section class="about" id="apropos">
+    <h2 class="section-title" data-fr="Qui sommes-nous ?" data-en="Who we are">Qui sommes-nous ?</h2>
+    <div class="gold-line"></div>
+    <p class="section-intro"
+       data-fr="GENEVEC — Génération Vertueuse Cardinal Laurent Monsengwo — est une organisation sans but lucratif engagée dans le développement des capacités, la formation professionnelle et l’accompagnement des initiatives économiques.">
+      GENEVEC — Génération Vertueuse Cardinal Laurent Monsengwo — est une organisation sans but lucratif engagée dans le développement des capacités, la formation professionnelle et l’accompagnement des initiatives économiques.
+    </p>
+    <p class="section-intro"
+       data-en="GENEVEC — Génération Vertueuse Cardinal Laurent Monsengwo — is a non-profit organization committed to capacity development, vocational training and support for economic initiatives.">
+      GENEVEC — Génération Vertueuse Cardinal Laurent Monsengwo — is a non-profit organization committed to capacity development, vocational training and support for economic initiatives.
+    </p>
+  </section>
+
+  <section id="domaines">
+    <h2 class="section-title" data-fr="Nos domaines d’intervention" data-en="Our areas of work">Nos domaines d’intervention</h2>
+    <div class="gold-line"></div>
+    <p class="section-intro" data-fr="Des solutions pratiques pour renforcer les compétences et favoriser l’autonomie économique."
+       data-en="Practical solutions to strengthen skills and promote economic independence.">
+      Des solutions pratiques pour renforcer les compétences et favoriser l’autonomie économique.
+    </p>
+    <div class="cards">
+      <article class="card">
+        <div class="icon">🎓</div>
+        <h3 data-fr="Formation professionnelle" data-en="Vocational training">Formation professionnelle</h3>
+        <p data-fr="Développer les compétences techniques et professionnelles en lien avec les besoins du marché."
+           data-en="Develop technical and professional skills aligned with labour-market needs.">
+          Développer les compétences techniques et professionnelles en lien avec les besoins du marché.
+        </p>
+      </article>
+      <article class="card">
+        <div class="icon">💡</div>
+        <h3 data-fr="Entrepreneuriat" data-en="Entrepreneurship">Entrepreneuriat</h3>
+        <p data-fr="Accompagner les porteurs d’idées et les petites entreprises dans la structuration de leurs activités."
+           data-en="Support aspiring entrepreneurs and small businesses in structuring their activities.">
+          Accompagner les porteurs d’idées et les petites entreprises dans la structuration de leurs activités.
+        </p>
+      </article>
+      <article class="card">
+        <div class="icon">🤝</div>
+        <h3 data-fr="Insertion socio-économique" data-en="Socio-economic inclusion">Insertion socio-économique</h3>
+        <p data-fr="Faciliter l’accès aux opportunités, à l’accompagnement et aux parcours d’insertion durable."
+           data-en="Facilitate access to opportunities, support and sustainable inclusion pathways.">
+          Faciliter l’accès aux opportunités, à l’accompagnement et aux parcours d’insertion durable.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="about" id="partenaires">
+    <h2 class="section-title" data-fr="Espace partenaires" data-en="Partners area">Espace partenaires</h2>
+    <div class="gold-line"></div>
+    <p class="section-intro"
+       data-fr="GENEVEC souhaite développer des collaborations avec les institutions publiques, les organisations de développement, les entreprises et les acteurs communautaires."
+       data-en="GENEVEC seeks to collaborate with public institutions, development organizations, businesses and community stakeholders.">
+      GENEVEC souhaite développer des collaborations avec les institutions publiques, les organisations de développement, les entreprises et les acteurs communautaires.
+    </p>
+    <div style="text-align:center">
+      <a class="button" href="#contact" data-fr="Proposer un partenariat" data-en="Propose a partnership">Proposer un partenariat</a>
+    </div>
+  </section>
+
+  <section id="beneficiaires">
+    <h2 class="section-title" data-fr="Espace bénéficiaires" data-en="Beneficiaries area">Espace bénéficiaires</h2>
+    <div class="gold-line"></div>
+    <p class="section-intro"
+       data-fr="Retrouvez ici les informations relatives aux formations, aux opportunités d’accompagnement et aux futurs appels à candidatures."
+       data-en="Find information here about training, support opportunities and future calls for applications.">
+      Retrouvez ici les informations relatives aux formations, aux opportunités d’accompagnement et aux futurs appels à candidatures.
+    </p>
+    <div class="cards">
+      <article class="card">
+        <h3 data-fr="Formations" data-en="Training">Formations</h3>
+        <p data-fr="Les annonces de formation seront publiées dans cet espace."
+           data-en="Training announcements will be published in this section.">
+          Les annonces de formation seront publiées dans cet espace.
+        </p>
+      </article>
+      <article class="card">
+        <h3 data-fr="Candidatures" data-en="Applications">Candidatures</h3>
+        <p data-fr="Les modalités de candidature seront précisées pour chaque opportunité."
+           data-en="Application procedures will be provided for each opportunity.">
+          Les modalités de candidature seront précisées pour chaque opportunité.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="callout">
+    <h2 data-fr="Ensemble, développons les opportunités" data-en="Together, let’s develop opportunities">
+      Ensemble, développons les opportunités
+    </h2>
+    <p data-fr="La formation, l’entrepreneuriat et l’accompagnement peuvent contribuer à un développement plus inclusif et durable."
+       data-en="Training, entrepreneurship and support can contribute to more inclusive and sustainable development.">
+      La formation, l’entrepreneuriat et l’accompagnement peuvent contribuer à un développement plus inclusif et durable.
+    </p>
+    <a class="button" href="#contact" data-fr="Entrer en contact" data-en="Get in touch">Entrer en contact</a>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title" data-fr="Contactez GENEVEC" data-en="Contact GENEVEC">Contactez GENEVEC</h2>
+    <div class="gold-line"></div>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <h3 data-fr="Adresse" data-en="Address">Adresse</h3>
+        <p>Kinshasa, République démocratique du Congo</p>
+      </div>
+      <div class="contact-box">
+        <h3 data-fr="Téléphone" data-en="Phone">Téléphone</h3>
+        <p>+243 827 541 170</p>
+      </div>
+      <div class="contact-box">
+        <h3 data-fr="Courriel" data-en="Email">Courriel</h3>
+        <p><a href="mailto:katshiayihonor@gmail.com">katshiayihonor@gmail.com</a></p>
+        <p data-fr="Les adresses professionnelles GENEVEC seront activées après la configuration de la messagerie."
+           data-en="GENEVEC professional email addresses will be activated after email configuration.">
+          Les adresses professionnelles GENEVEC seront activées après la configuration de la messagerie.
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <strong>GENEVEC ASBL</strong>
+  <p data-fr="Génération Vertueuse Cardinal Laurent Monsengwo"
+     data-en="Génération Vertueuse Cardinal Laurent Monsengwo">
+    Génération Vertueuse Cardinal Laurent Monsengwo
+  </p>
+  <p class="small">© <span id="year"></span> GENEVEC ASBL — <span data-fr="Tous droits réservés" data-en="All rights reserved">Tous droits réservés</span></p>
+</footer>
+
+<script>
+  let currentLanguage = "fr";
+
+  document.getElementById("languageButton").addEventListener("click", function () {
+    currentLanguage = currentLanguage === "fr" ? "en" : "fr";
+    document.documentElement.lang = currentLanguage;
+
+    document.querySelectorAll("[data-fr][data-en]").forEach(function (element) {
+      element.textContent = element.getAttribute("data-" + currentLanguage);
+    });
+
+    this.textContent = currentLanguage === "fr" ? "EN" : "FR";
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
